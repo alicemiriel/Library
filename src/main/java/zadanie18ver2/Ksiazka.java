@@ -20,7 +20,7 @@ public class Ksiazka {
 
     @Override
     public String toString() {
-        return String.format("Tytul %s w cenie %s", title, cena);
+        return String.format("Tytul: %s w cenie: %s", title, cena);
     }
 }
 

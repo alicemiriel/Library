@@ -33,6 +33,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return String.format("Imie %s, nazwisko &s", name, surname);
+        return String.format("Imie: %s, nazwisko: %s ksiazek %s", name, surname, "\n" + ksiazki +"\n");
     }
 }

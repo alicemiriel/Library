@@ -21,10 +21,10 @@ public class Biblioteka {
         List<Author> autors = new ArrayList<>();
 
         for (Author author : mappedAuthors) {
-            Author tmp = new Author(author.getId(), author.getname(), author.getsurname());
-            tmp.getKsiazki().addAll(mappedBooks.get(author.getId()));
-//            author.getKsiazki().addAll(mappedBooks.get(author.getId()));
-
+//            Author tmp = new Author(author.getId(), author.getname(), author.getsurname());
+//            tmp.getKsiazki().addAll(mappedBooks.get(author.getId()));
+            author.getKsiazki().addAll(mappedBooks.get(author.getId()));
+            autors.add(author);
         }
         return autors;
     }
