@@ -33,6 +33,14 @@ public class Author {
 
     @Override
     public String toString() {
-        return String.format("Imie: %s, nazwisko: %s ksiazek %s", name, surname, "\n" + ksiazki +"\n");
+        return String.format("Imie: %s, nazwisko: %s ksiazek %s", name, surname,  ksiazki + "\n");
+    }
+
+    public boolean isFamous() {
+        if (ksiazki.size() > 5) {
+            System.out.print("He is famous!");
+            return true;
+        }
+        return false;
     }
 }
